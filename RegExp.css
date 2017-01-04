@@ -1,0 +1,30 @@
+body {
+	font-family: arial;
+	font-size: 12px;
+}
+
+input {
+	font-size: 11px;
+}
+
+textarea {
+	font-size: 11px;
+}
+
+th {
+	background:#8888FF;color:white;text-align:left
+}
+
+td {
+	background:#CCCC99;color:black;font-size:12px
+}
+
+td.RowA {
+	background: #CCCC99
+}
+
+td.RowB {
+	background: #EEEEBB
+}
+
+.header {font-weight: bold}
