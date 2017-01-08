@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>js正则查找替换工具</title>
+	<link rel="stylesheet" type="text/css" href="./RegExp.css">
+	<script type="text/JavaScript" src="./RegExp.js"></script>
+</head>
+<body>
+	<form name="tester" action="" method="post" onSubmit="processRegex(this);return false">
+		<table border="1" cellpadding="4" cellspacing="0" width="550">
+			<tr>
+				<th class="Dialog">js正则查找替换工具</th>
+			</tr>
+			<tr>
+				<td class="Dialog">
+					<span class="header">请输入正则表达式:</span>
+					<br>
+					<input name="RegEx" type="text" size="62" style="font-size:13px">
+					<input type="checkbox" name="caseSensitive" id="caseSensitive" value="Yes">
+					<label for="caseSensitive">区分大小写</label>
+					<input type="radio" name="operation" id="operationFind" value="find" checked onClick="hideReplaceFields()">
+					<label for="OperationFind">查找</label>
+					<input type="radio" name="operation" id="operationReplace" value="replace" onClick="showReplaceFields()">
+					<label for="OperationReplace">替换</label>
+					<br>
+					<span class="header" id="replaceheader">请输入替换的正则表达式:</span>
+					<br>
+					<input id="RegExReplace" name="RegExReplace" type="text" size="62" style="font-size:13px">				
+					<span class="header" style="margin-top: 3px;display: block;">填写你想查找或替换的文本:</span>
+					<textarea name="searchText"  cols="70" rows="6"></textarea>
+					<img src="http://files.cnblogs.com/files/MuYunyun/pkq.gif" style="margin-left: 10px">
+					<br>
+					<input name="submit" type="submit" style="font-weight: bold" value="开始">
+				</td>
+			</tr>
+		</table>
+	</form><br>
+	<span id="output"></span>
+	<script language="JavaScript">
+		hideReplaceFields();
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
