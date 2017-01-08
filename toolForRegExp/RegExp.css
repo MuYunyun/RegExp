@@ -19,11 +19,11 @@ td {
 	background:#CCCC99;color:black;font-size:12px
 }
 
-td.RowA {
+.RowA {
 	background: #CCCC99
 }
 
-td.RowB {
+.RowB {
 	background: #EEEEBB
 }
 
